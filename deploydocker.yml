@@ -1,15 +1,15 @@
-- hosts: all
+- hosts: web
   tasks:
   - name: stop container
-	  shell: docker container stop demo-project-docker-container
-	  ignore_errors: true
+    shell: docker container stop demo-project-docker-container
+    ignore_errors: true
 	  
-	- name: remove container
+  - name: remove container
     shell: docker container rm demo-project-docker-container
-	  ignore_errors: true
+    ignore_errors: true
 
   - name: remove docker image
     shell: docker rmi anuragjunghare/demo-project-docker
 	  
   - name: create a docker container
-	  shell: docker container run -itd --name demo-project-docker-container -p 9000:80 anuragjunghare/demo-project-docker
+    shell: docker container run -itd --name demo-project-docker-container -p 9000:80 anuragjunghare/demo-project-docker
