@@ -1,5 +1,5 @@
-FROM centos:latest
-RUN sudo yum install httpd -y \
+FROM rhel7:latest
+RUN sudo yum -y install httpd \
 zip \
 unzip
 ADD https://www.free-css.com/asstes/files/free-css-templates/download/page247/kindle.zip /var/www/html/
