@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM oraclelinux:latest
 RUN yum install -y httpd \
 zip \
 unzip
