@@ -1,5 +1,5 @@
-FROM: centos:latest
-RUN yum install httpd -y \
+FROM centos:latest
+RUN sudo yum install httpd -y \
 zip \
 unzip
 ADD https://www.free-css.com/asstes/files/free-css-templates/download/page247/kindle.zip /var/www/html/
