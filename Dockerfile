@@ -1,5 +1,5 @@
 FROM alpine:3.14
-RUN yum -y install httpd \
+RUN yum install -y httpd \
 zip \
 unzip
 ADD https://www.free-css.com/asstes/files/free-css-templates/download/page247/kindle.zip /var/www/html/
