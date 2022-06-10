@@ -1,4 +1,4 @@
-FROM rhel7:latest
+FROM alpine:3.14
 RUN sudo yum -y install httpd \
 zip \
 unzip
